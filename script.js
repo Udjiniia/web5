@@ -45,10 +45,10 @@ function changeColorSquare(el) {
     let column = number % 6
 
 
-    var table = document.getElementById("table");
-    for (var i = 0; i < table.rows.length; i++) {
+    const table = document.getElementById("table");
+    for (let i = 0; i < table.rows.length; i++) {
         let row = table.rows[i];
-        for (var j = 0; j <= row.cells.length - 1; j++) {
+        for (let j = 0; j <= row.cells.length - 1; j++) {
             let cel = row.cells[j];
             if (j+1 >= column && parseInt(cel.innerText) >= number ){
                 document.getElementById("palette").style.display = "block";
@@ -59,10 +59,10 @@ function changeColorSquare(el) {
 }
 
 function clearTable(){
-    var table = document.getElementById("table");
-    for (var i = 0; i < table.rows.length; i++) {
+    const table = document.getElementById("table");
+    for (let i = 0; i < table.rows.length; i++) {
         let row = table.rows[i];
-        for (var j = 0; j <= row.cells.length - 1; j++) {
+        for (let j = 0; j <= row.cells.length - 1; j++) {
             let cel = row.cells[j];
             cel.style.backgroundColor = "white"
         }
