@@ -1,5 +1,15 @@
 input:invalid {
-    border: none;
-    outline: 2px solid red;
+    background-color: #ffdddd;
 }
 
+form:invalid {
+    border: 5px solid #5d0819;
+}
+
+input:valid {
+    background-color: #31b1b7;
+}
+
+form:valid {
+    border: 5px solid #061951;
+}
